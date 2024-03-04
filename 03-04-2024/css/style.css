@@ -1,0 +1,211 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    /* border-left: 1px solid red; */
+    /* border-right: 1px solid red; */
+    width: 100%;
+    overflow: hidden;
+    
+}
+/* ************************* */
+.frame-wrapper {
+    height: 953px;
+    width: 100%;
+    background-image: url(../images/background.png);
+    background-position: center;
+    background-size: cover;
+}
+.frame-wrapper  .lable-head {
+    background-color: #D1603C;
+    text-align: center;
+    padding-block: 11px;
+    margin-bottom: 38px;
+}
+.frame-wrapper  .lable-head span{
+    color: #fff;
+}
+
+.frame-wrapper .main-head .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 110px;
+}
+.frame-wrapper .main-head .nav-block ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.frame-wrapper .main-head .nav-block ul li{
+    list-style: none;
+
+}
+.frame-wrapper .main-head .nav-block ul li a {
+    color: #fff;
+    font-size: 18px;
+    font-family: inherit;
+    padding-bottom: 7px;
+    font-weight: 500;
+}
+.frame-wrapper .main-head .nav-block ul li a i{
+    font-size: 24px;
+}
+.frame-wrapper .main-head .nav-block ul li .active{
+    border-bottom: 1px solid #fff;
+}
+
+
+
+.hero-section-wrapper .hero-section-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-section-wrapper .hero-section-content .lt-block .text-content h1{
+    color: #fff;
+    font-size: 80px;
+    margin: 0;
+    padding: 0;
+    font-family: "Rufina", serif;
+}
+.hero-section-wrapper .hero-section-content .lt-block p {
+    color: #fff;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    margin-top: 19px;
+    margin-bottom: 55px;
+    line-height: 25px;
+}
+.hero-section-wrapper .hero-section-content .lt-block a {
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding-block: 11px;
+    padding-inline: 24px;
+}
+
+
+
+
+@media only screen and (max-width: 1573px){
+    .hero-section-wrapper .hero-section-content{
+        flex-direction: column;
+    }
+    .text-content {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .frame-wrapper .main-head .nav-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 110px;
+        gap: 300px;
+    }
+    .hero-section-wrapper .hero-section-content .lt-block p {
+        margin-bottom: 42px;
+        
+    }
+   
+}
+
+
+@media only screen and (max-width: 1107px){
+    .images-content{
+        text-align: center;
+    }
+    .images-content img {
+        width: 86%;
+    }  
+    .text-content {
+        text-align: center;
+        margin-bottom: 40px;
+        max-width: 505px;
+    } 
+
+}
+@media only screen and (max-width: 907px){
+    .frame-wrapper .main-head .nav-content {
+        gap: 147px;
+    }
+    .logo-block img {
+        width: 60%;
+    }
+    .hero-section-wrapper .hero-section-content .lt-block .text-content h1 {
+
+        font-size: 48px;
+        
+    }
+}
+
+@media only screen and (max-width: 699px){
+    .frame-wrapper .main-head .nav-content {
+        gap: 45px;
+    }
+}
+
+@media only screen and (max-width: 585px){
+    .frame-wrapper .main-head .nav-content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .frame-wrapper .main-head .nav-content {
+        gap: 13px;
+    }
+    .frame-wrapper .main-head .nav-block ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 34px;
+    }
+    .hero-section-wrapper .hero-section-content .lt-block .text-content h1 {
+        font-size: 36px;
+    }
+    .text-content {
+        text-align: center;
+        margin-bottom: 40px;
+        max-width: 415px;
+    }
+    .hero-section-wrapper .hero-section-content .lt-block p {
+        margin-bottom: 22px;
+    }
+    .frame-wrapper .main-head .nav-content{
+        margin-bottom: 48px;
+    }
+    .frame-wrapper {
+        height: 757px;
+    }
+    
+}
+
+@media only screen and (max-width: 415px){
+    .hero-section-wrapper .hero-section-content .lt-block .text-content h1 {
+        font-size: 31px;
+    }
+    .text-content{
+        padding-inline: 18px;
+    }
+}
+
